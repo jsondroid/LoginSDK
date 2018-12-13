@@ -15,6 +15,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".AuthActivity">
+            <intent-filter>
+                <action android:name="json.auth.ACTION" />
+                <data
+                    android:host="android.com.auth"
+                    android:path="/auth"
+                    android:scheme="json11225588" /> <!-- json://android.com.login/login?type=110 ,type=110为传参 -->
+                <category android:name="android.intent.category.DEFAULT" /> <!-- 必须要该标签 -->
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

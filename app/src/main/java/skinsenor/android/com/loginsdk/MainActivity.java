@@ -2,8 +2,8 @@ package skinsenor.android.com.loginsdk;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
@@ -49,15 +49,15 @@ public class MainActivity extends AppCompatActivity {
     private Uri uri = Uri.parse("json://android.com.login/login?type=110");
 
     public void useLoginSdk(View view) {
-//        Intent intent = new Intent("json.login.ACTION");
-//        intent.setData(uri);
-//        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//        startActivityForResult(intent, 22);
-//
-        Intent intent = new Intent("android.intent.action.VIEW");
-        intent.setData(Uri.parse("tencent1105762899://com.tencent.tauth.AuthActivity"));
+        Intent intent = new Intent("json.login.ACTION");
+        intent.setData(uri);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
+//
+//        Intent intent = new Intent("android.intent.action.VIEW");
+//        intent.setData(Uri.parse("tencent1105762899://com.tencent.tauth.AuthActivity"));
+//        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//        startActivity(intent);
     }
 
     @Override
