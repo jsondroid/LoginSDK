@@ -10,7 +10,7 @@ import android.view.View;
 /**
  * 通过uri启动另一个App
  * <p>
- * qq登录认证流程 sdk(AuthActivity)---->qq---->（AuthActivity）sdk，
+ * qq登录认证流程 sdk(app)---->qq---->（AuthActivity）sdk，
  * 自己的app(前有sdk)--->通过scheme协议将认证数据发送给qq客户端--->再通过scheme协议传值给（AuthActivity）sdk--->再回调到app
  * sdk中有一个AuthActivity，用来接收qq客户端通过scheme协议回传的数据给SDK，然后sdk再回调到app上层
  * <p>
